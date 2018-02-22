@@ -64,7 +64,7 @@ public abstract class AbstractCatalogPlanStrategy implements CatalogPlanStrategy
         Set<String> ids = Sets.newHashSet();
         Set<String> names = Sets.newHashSet();
         String namespace = config.getNamespace() == null ? "br" : config.getNamespace();
-        String userDefinedId = makeId(namespace, "ApacheBrooklynBlueprint", ids);
+        String userDefinedId = makeId(namespace, "apachebrooklynblueprint", ids);
         String userDefinedName = makeName(namespace, "Apache Brooklyn Blueprint", "1.0", names);
         UserDefinedBlueprintPlan userDefinedPlan = new UserDefinedBlueprintPlan(userDefinedId, "default", "Users specify a complete Apache Brooklyn blueprint passed in as parameters", ImmutableMap.of());
         definitions.put(userDefinedId, new ServiceDefinition(userDefinedId,
